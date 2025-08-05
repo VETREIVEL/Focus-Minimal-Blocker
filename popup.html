@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Focus Mode</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Focus Mode</h1>
+
+    <div class="status">
+      <label class="switch">
+        <input type="checkbox" id="toggleFocus" />
+        <span class="slider round"></span>
+      </label>
+      <span id="statusText">Focus Mode: OFF</span>
+    </div>
+
+    <div class="quote-container">
+      <p id="quote">“Loading quote...”</p>
+    </div>
+
+    <div class="time-section">
+      ⏱️ You focused <strong id="focusTime">0</strong> mins today on this site.
+    </div>
+
+    <div class="whitelist">
+      <input type="text" id="customDomain" placeholder="example.com" />
+      <button id="addWhitelist">Whitelist</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
